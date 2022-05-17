@@ -7,15 +7,18 @@ url = 'https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=fal
 
 
 def test_name():
-    response = requests.get(url)
-    json_response = json.loads(response.text)
-    name = jsonpath.jsonpath(json_response, 'Name')
-    name1 = ['Carbon credits']
-    assert name == name1, "name does not match"
-    assert name is not None
+    try:
+        response = requests.get(url)
+        json_response = json.loads(response.text)
+        name = jsonpath.jsonpath(json_response, 'Name')
+        name1 = ['Carbon credits']
+        assert name == name1, "name does not match"
+        assert name is not None
+    except LookupError:
+        print(" Something went wrong!")
 
 
-def test_canrelist():
+def test_can_relist():
     response = requests.get(url)
     json_response = response.json()
     assert json_response['CanRelist'] is True
