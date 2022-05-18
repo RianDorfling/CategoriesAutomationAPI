@@ -1,7 +1,12 @@
-# CategoriesAutomationAPI
- 
-  ![API](https://user-images.githubusercontent.com/105658230/168879994-a209b525-9226-4759-bb12-57c9183ee1df.png)
+# AUTOMATION API TESTING OF CATEGORIES
+ <div id="top"></div>
+<!--   ![API](https://user-images.githubusercontent.com/105658230/168879994-a209b525-9226-4759-bb12-57c9183ee1df.png) -->
 
+<div align="center">
+<a href="https://user-images.githubusercontent.com/105658230/">
+    <img src="https://user-images.githubusercontent.com/105658230/168879994-a209b525-9226-4759-bb12-57c9183ee1df.png" alt="Logo" width="180" height="180">
+</a>
+</div>
 
 - [INSTALLATION](#installation)
 - [DESCRIPTION](#description)
@@ -23,26 +28,44 @@ The following libraries need to be installed
 - jsonpath_rw_ext
 
 ## How to install the libraries
-Go to the comand promp and use the following 
+Go to the comand promp and execute the following commands 
 
-`pip install -U pytest`
+Install pytest library 
+```sh
+pip install -U pytest
+```
 
-`pip install -U requests`
+Install requests library
 
-`pip install -U jsonpath`
+```sh
+pip install -U requests
+```
 
-`pip install -U jsonpath_rw_ext`
+Install jsonpath library
+```sh
+pip install -U jsonpath
+```
+
+Install jsonpath rw ext library
+```sh
+pip install -U jsonpath_rw_ext
+```
 
 ## Install Pycharm
 Go to **[Pycharm](https://www.jetbrains.com/pycharm/)**
-	
+
+Install Pycharm IDE (Community Edition is good enough)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 # DESCRIPTION
-The purspose of this test is create an automomated test with the following acceptance criteria:
+The purspose of this test is to create an automomated test with the following acceptance criteria:
 - Name = "Carbon credits"
 - CanRelist = true
 - The Promotions element with Name = "Gallery" has a Description that contains the text "Good position in category"
 
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 # HOW TO RUN THE TEST
 - Download the source code
@@ -62,4 +85,4 @@ The purspose of this test is create an automomated test with the following accep
 - Type the following command: `pytest -v TestCases`
 - Test results will be displayed 
 
-
+<p align="right">(<a href="#top">back to top</a>)</p>
